@@ -1,0 +1,9 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.vscode/
+
+# Documentacao de curriculo/manuais (arquivos grandes, nao versionados)
+doc/

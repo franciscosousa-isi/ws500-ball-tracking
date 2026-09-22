@@ -1,0 +1,18 @@
+color_tracker_node:
+  ros__parameters:
+    color_topic: /camera/color/image_raw
+    depth_topic: /camera/depth/image_raw
+    camera_info_topic: /camera/color/camera_info
+    output_topic: /ws500/ball/position
+    debug_image_topic: /ws500/ball/debug_image
+
+    # HSV do vermelho — TEM QUE SER RECALIBRADO sob a iluminacao real da prova.
+    # Use rqt_image_view em /ws500/ball/debug_image para ajustar.
+    hsv_lower1: [0, 120, 70]
+    hsv_upper1: [10, 255, 255]
+    hsv_lower2: [170, 120, 70]
+    hsv_upper2: [180, 255, 255]
+
+    min_contour_area_px: 150.0
+    ball_diameter_m: 0.15
+    depth_roi_px: 5
